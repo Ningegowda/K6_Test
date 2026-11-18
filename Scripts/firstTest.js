@@ -12,7 +12,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get('https://www.commbank.com.au/personal-loans.html');
+  const res = http.get('https://test-api.k6.io/public/crocodiles/1');
   check(res, {
     'status is 200': (r) => r.status === 200,
   });

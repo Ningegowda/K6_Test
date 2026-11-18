@@ -16,7 +16,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get('https://www.commbank.com.au/personal-loans.html');
+  const res = http.get('https://k6.io');
 
   check(res, {
     'status is 200': (r) => r.status === 200,
